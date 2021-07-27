@@ -1,0 +1,7 @@
+---
+- name: Installing Tomcat server with roles
+  hosts: web
+  become: no
+  gather_facts: no
+  roles:
+    - jenkins_role 
