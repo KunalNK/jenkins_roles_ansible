@@ -14,6 +14,11 @@ Step 3. Go inside the directory jenkins_role, copy & paste the following task in
     name: "{{req_java}}"
     state: present
 
+- name: Installing required dependencies 
+  yum:
+    name: epel-release
+    state: present
+
 - name: Setting default java
   alternatives:
     name: java
