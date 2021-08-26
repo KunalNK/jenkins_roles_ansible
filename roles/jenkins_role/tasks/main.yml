@@ -5,6 +5,11 @@
     name: "{{req_java}}"
     state: present
 
+- name: Installing required dependencies 
+  yum:
+    name: epel-release
+    state: present
+
 - name: Setting default java
   alternatives:
     name: java
