@@ -44,3 +44,15 @@
     name: jenkins
     state: started
     enabled: yes
+
+
+
+## To run jenkins on amazon box, add the following code.
+# - name: Upgrading all packages
+#   yum:
+#     name: "*"
+#     state: latest
+
+
+# - name: Install epel
+#   command: amazon-linux-extras install epel -y
